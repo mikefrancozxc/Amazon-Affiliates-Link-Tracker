@@ -11,7 +11,7 @@ function displayAds() {
         const adRow = document.createElement('tr');
         adRow.innerHTML = `
             <td>${ad.name}</td>
-            <td>${ad.link}</td>
+            <td><a href="${ad.link}" target="_blank">${ad.link}</a></td>
             <td>${ad.category}</td>
             <td>
                 <button class="edit btn btn-primary btn-sm" data-id="${ad.id}">Edit</button>
